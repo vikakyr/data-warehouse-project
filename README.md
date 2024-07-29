@@ -1,0 +1,1 @@
+The project involving the design of data structures, the configuration of the ETL process(SSIS), and the population of data warehouse structures, as well as data analysis in a Business Intelligence system (Power BI).
