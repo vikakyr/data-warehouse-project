@@ -1,0 +1,44 @@
+Code,Description,Code Type,Latitude,Longitude
+nga,Northgate Branch,Location,47.70608183,-122.3229848
+hip,High Point Branch,Location,47.55530501,-122.375191
+rbe,Rainier Beach Branch,Location,47.52144412,-122.2705705
+wlb,Wa Talking Book And Braille Library,Location,47.61665906,-122.3364218
+dth,Douglass-Truth Branch,Location,47.60201965,-122.3016717
+drp1,*** Temporary ***,Location,47.60201242,-122.3016502
+mag,Magnolia Branch,Location,47.64547084,-122.4014173
+nhy,NewHolly Branch,Location,47.53916564,-122.2908846
+bal,Ballard Branch,Location,47.66995407,-122.3843567
+gwd,Greenwood Branch,Location,47.68760354,-122.3551007
+net,Northeast Branch,Location,47.6780174,-122.2907311
+idc,International District/Chinatown Branch,Location,47.5963629,-122.3227628
+cap,Capitol Hill Branch,Location,47.6231447,-122.3224187
+stak,Unavailable: [do Not Use!!!],Location,0,0
+wal,Wallingford Branch,Location,47.66143492,-122.3387673
+tcs,Tech. & Coll. Srvcs Dept (Central),Location,0,0
+lcy,Lake City Branch,Location,47.71985311,-122.2980486
+bro,Broadview Branch,Location,47.72311263,-122.3563075
+mon,Montlake Branch,Location,47.6405243,-122.3024765
+mob,Mobile Services,Location,0,0
+spa,South Park Branch,Location,47.52636921,-122.322718
+qas,Storage - Ask At Desk,Location,0,0
+dlr,Delridge Branch,Location,47.55315547,-122.3633751
+col,Columbia Branch,Location,47.56004537,-122.2869806
+out,Outreach,Location,0,0
+uni,University Branch,Location,47.66539711,-122.3177946
+qna,Queen Anne Branch,Location,47.63392885,-122.3626885
+wts,West Seattle Branch,Location,47.58279632,-122.3848728
+mgm,Madrona-Sally Goldmark Branch,Location,47.61286722,-122.2901007
+glk,Green Lake Branch,Location,47.68160974,-122.3267123
+bea,Beacon Hill Branch,Location,47.57821385,-122.3114541
+cen,Central Library,Location,47.60676334,-122.332173
+fre,Fremont Branch,Location,47.65019559,-122.3483888
+swt,Southwest Branch,Location,47.5227166,-122.3763576
+ill,Interlibrary Loan,Location,0,0
+web,Electronic Resources,Location,0,0
+lock1,High Point Branch: SPL Lockers,Location,47.54845315,-122.3759427
+lock2,Rainier Beach Branch: SPL Lockers,Location,47.52152381,-122.2705168
+lock4,Beacon Hill Branch: SPL Lockers,Location,47.57826451,-122.3114649
+lock5,Broadview Branch: SPL Lockers,Location,47.72317037,-122.3562753
+lock3,Northeast Branch: SPL Lockers,Location,47.67795825,-122.2907178
+moc,Materials and Operations Center,Location,0,0
+lock6,Montlake Branch: SPL Lockers,Location,47.64056045,-122.3024551
