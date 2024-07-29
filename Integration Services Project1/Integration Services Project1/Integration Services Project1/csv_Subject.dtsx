@@ -1,0 +1,1240 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/8/2024 2:06:50 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DELL-1"
+  DTS:CreatorName="DELL-1\B"
+  DTS:DTSID="{F281449B-0ED2-478D-951C-E92670CEE5AF}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5467.0"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="35"
+  DTS:VersionGUID="{7BF22A4E-0D7C-4F6A-9D78-B08C0237400A}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CSV Inventory 3]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{302F317A-0290-4C3C-B0A1-E7F9EC303CD8}"
+      DTS:ObjectName="CSV Inventory 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="C:\Users\B\Desktop\hD-project\Library_Collection_Inventory_20240607.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BibNum"
+              DTS:DTSID="{F92E0F36-3DA2-46D6-80CA-4FF508500106}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Title"
+              DTS:DTSID="{33FA1401-E753-4BB6-903C-8ABF96D36F91}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Author"
+              DTS:DTSID="{AADBEA81-B662-485A-AFEE-5D9B5DB794F2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ISBN"
+              DTS:DTSID="{80590F8F-470E-478C-83D1-75518CFD8513}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PublicationYear"
+              DTS:DTSID="{5777171A-7624-4B40-805F-A18161C7D2AE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Publisher"
+              DTS:DTSID="{5BCBB242-6D38-4BE5-87DE-B5CB7AA0B0C2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Subjects"
+              DTS:DTSID="{7B12A78E-9E85-44AC-9198-0AD37E8AAB14}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ItemType"
+              DTS:DTSID="{D05666C1-DED3-4349-984F-BD9B989192DD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ItemCollection"
+              DTS:DTSID="{58914FC0-49C1-4F18-A5C1-4D5A16B7ABCC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FloatingItem"
+              DTS:DTSID="{D82EE6B4-C952-4402-9601-A32300C6FD47}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ItemLocation"
+              DTS:DTSID="{C104FC84-C162-4CF7-9F89-7F5A572DB091}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ReportDate"
+              DTS:DTSID="{263EF084-BAC0-420D-BC0D-3D8740EBCAC0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ItemCount"
+              DTS:DTSID="{A8CC914A-D092-4357-8E69-2CAB7937A72D}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CSV Subjects]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{CE7631F3-EB40-48A6-9E47-0A1F51BAAFB0}"
+      DTS:ObjectName="CSV Subjects">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="C:\Users\B\Desktop\hD-project\Plik_subjects.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="220"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Subject"
+              DTS:DTSID="{99011E3A-4A39-4B58-8C81-67E0DD7E5580}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{B769BE8E-5496-4F2B-A3BB-4F8D214D352F}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="C:\Users\B\Desktop\hD-project\plik_subject.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Subjects"
+              DTS:DTSID="{70AEFFD1-2C43-4E71-8DA1-3F07744BC7CB}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{4504D41A-6250-4BF0-8639-65F89466980B}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="C:\Users\B\Desktop\hD-project\error_subject.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Flat File Source Error Output Column"
+              DTS:DTSID="{CFE0D945-EDCD-40A2-91AE-F64B49EAC81E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{99B4660C-1FC4-4A8D-BA64-FDDA0781CB4E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{52F9B603-10E3-4C63-9A68-08FFE4987467}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{678C00C1-2BA4-4B94-AD10-DB62961C431A}"
+      DTS:ObjectName="Flat File Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="C:\Users\B\Desktop\hD-project\Subject_Error_Log.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Flat File Source Error Output Column"
+              DTS:DTSID="{3800B0BA-70E3-47E7-B0D7-BF7D7D279740}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{3F1F8D97-F028-4BB5-90B7-8BF2D55A0CB9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{37FB30F4-9F64-4FDE-9B4E-87F92C29DB4C}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 3]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{91B28019-A4CB-4221-9495-B3F61AB30332}"
+      DTS:ObjectName="Flat File Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="C:\Users\B\Desktop\hD-project\proba1.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="220"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Subject"
+              DTS:DTSID="{D6C05B6C-B947-4DC9-825E-06A9BA842888}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\CSV Subject"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{C7CB61A3-AC10-4D5D-B5D1-B2E5854E1C4C}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="CSV Subject"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\CSV Subject\Conditional Split"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Conditional Split"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\CSV Subject\Conditional Split.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CSV Subject\Conditional Split.Inputs[Conditional Split Input].Columns[Subject]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="220"
+                      cachedName="Subject"
+                      lineageId="Package\CSV Subject\Data Conversion.Outputs[Data Conversion Output].Columns[Subject]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CSV Subject\Conditional Split.Outputs[Is_null]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Is_null"
+                  synchronousInputId="Package\CSV Subject\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">[TRIM](#{Package\CSV Subject\Data Conversion.Outputs[Data Conversion Output].Columns[Subject]}) == ""</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">TRIM(Subject) == ""</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CSV Subject\Conditional Split.Outputs[Not_Null]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Not_Null"
+                  synchronousInputId="Package\CSV Subject\Conditional Split.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CSV Subject\Conditional Split.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\CSV Subject\Conditional Split.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV Subject\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CSV Subject\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CSV Subject\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CSV Subject\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CSV Subject\CSV Inventory"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="CSV Inventory"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CSV Subject\CSV Inventory.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[CSV Inventory 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[CSV Inventory 3]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Output].Columns[Subjects]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Output].ExternalColumns[Subjects]"
+                      length="200"
+                      lineageId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Output].Columns[Subjects]"
+                      name="Subjects"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Output].ExternalColumns[BibNum]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="BibNum" />
+                    <externalMetadataColumn
+                      refId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Output].ExternalColumns[Title]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Title" />
+                    <externalMetadataColumn
+                      refId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Output].ExternalColumns[Author]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Author" />
+                    <externalMetadataColumn
+                      refId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Output].ExternalColumns[ISBN]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="ISBN" />
+                    <externalMetadataColumn
+                      refId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Output].ExternalColumns[PublicationYear]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="PublicationYear" />
+                    <externalMetadataColumn
+                      refId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Output].ExternalColumns[Publisher]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Publisher" />
+                    <externalMetadataColumn
+                      refId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Output].ExternalColumns[Subjects]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Subjects" />
+                    <externalMetadataColumn
+                      refId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Output].ExternalColumns[ItemType]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="ItemType" />
+                    <externalMetadataColumn
+                      refId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Output].ExternalColumns[ItemCollection]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="ItemCollection" />
+                    <externalMetadataColumn
+                      refId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Output].ExternalColumns[FloatingItem]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="FloatingItem" />
+                    <externalMetadataColumn
+                      refId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Output].ExternalColumns[ItemLocation]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="ItemLocation" />
+                    <externalMetadataColumn
+                      refId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Output].ExternalColumns[ReportDate]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="ReportDate" />
+                    <externalMetadataColumn
+                      refId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Output].ExternalColumns[ItemCount]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="ItemCount" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CSV Subject\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\CSV Subject\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CSV Subject\Data Conversion.Inputs[Data Conversion Input].Columns[Subjects]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="Subjects"
+                      lineageId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Output].Columns[Subjects]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CSV Subject\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\CSV Subject\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV Subject\Data Conversion.Outputs[Data Conversion Output].Columns[Subject]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="220"
+                      lineageId="Package\CSV Subject\Data Conversion.Outputs[Data Conversion Output].Columns[Subject]"
+                      name="Subject"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Output].Columns[Subjects]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CSV Subject\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\CSV Subject\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV Subject\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CSV Subject\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CSV Subject\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CSV Subject\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CSV Subject\dodanie &quot;,&quot; na końcu"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="dodanie &quot;,&quot; na końcu"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\CSV Subject\dodanie &quot;,&quot; na końcu.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CSV Subject\dodanie &quot;,&quot; na końcu.Inputs[Derived Column Input].Columns[Subjects]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="Subjects"
+                      lineageId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Output].Columns[Subjects]" />
+                    <inputColumn
+                      refId="Package\CSV Subject\dodanie &quot;,&quot; na końcu.Inputs[Derived Column Input].Columns[Subject]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="220"
+                      cachedName="Subject"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\CSV Subject\Data Conversion.Outputs[Data Conversion Output].Columns[Subject]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Output].Columns[Subjects]} + ","</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">Subjects + ","</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CSV Subject\dodanie &quot;,&quot; na końcu.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\CSV Subject\dodanie &quot;,&quot; na końcu.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CSV Subject\dodanie &quot;,&quot; na końcu.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\CSV Subject\dodanie &quot;,&quot; na końcu.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV Subject\dodanie &quot;,&quot; na końcu.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CSV Subject\dodanie &quot;,&quot; na końcu.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CSV Subject\dodanie &quot;,&quot; na końcu.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CSV Subject\dodanie &quot;,&quot; na końcu.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CSV Subject\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1045"
+              name="Flat File Destination"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CSV Subject\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\CSV Subject\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CSV Subject\Flat File Destination.Inputs[Flat File Destination Input].Columns[Flat File Source Error Output Column]"
+                      cachedCodepage="1250"
+                      cachedDataType="text"
+                      cachedName="Flat File Source Error Output Column"
+                      externalMetadataColumnId="Package\CSV Subject\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Flat File Source Error Output Column]"
+                      lineageId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]" />
+                    <inputColumn
+                      refId="Package\CSV Subject\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      externalMetadataColumnId="Package\CSV Subject\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      lineageId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Error Output].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\CSV Subject\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      externalMetadataColumnId="Package\CSV Subject\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Error Output].Columns[ErrorColumn]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CSV Subject\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      name="Flat File Source Error Output Column" />
+                    <externalMetadataColumn
+                      refId="Package\CSV Subject\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      dataType="i4"
+                      name="ErrorCode" />
+                    <externalMetadataColumn
+                      refId="Package\CSV Subject\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      dataType="i4"
+                      name="ErrorColumn" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\CSV Subject\generowanie pliku csv"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1045"
+              name="generowanie pliku csv"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CSV Subject\generowanie pliku csv.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 3]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\CSV Subject\generowanie pliku csv.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CSV Subject\generowanie pliku csv.Inputs[Flat File Destination Input].Columns[Subject]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="220"
+                      cachedName="Subject"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\CSV Subject\generowanie pliku csv.Inputs[Flat File Destination Input].ExternalColumns[Subject]"
+                      lineageId="Package\CSV Subject\wybranie tylko kolumny Subject.Outputs[Sort Output].Columns[Subject]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CSV Subject\generowanie pliku csv.Inputs[Flat File Destination Input].ExternalColumns[Subject]"
+                      codePage="1250"
+                      dataType="str"
+                      length="220"
+                      name="Subject" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\CSV Subject\wybranie tylko kolumny Subject"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="wybranie tylko kolumny Subject"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\CSV Subject\wybranie tylko kolumny Subject.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CSV Subject\wybranie tylko kolumny Subject.Inputs[Sort Input].Columns[Subject]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="220"
+                      cachedName="Subject"
+                      lineageId="Package\CSV Subject\Data Conversion.Outputs[Data Conversion Output].Columns[Subject]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CSV Subject\wybranie tylko kolumny Subject.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CSV Subject\wybranie tylko kolumny Subject.Outputs[Sort Output].Columns[Subject]"
+                      codePage="1250"
+                      dataType="str"
+                      length="220"
+                      lineageId="Package\CSV Subject\wybranie tylko kolumny Subject.Outputs[Sort Output].Columns[Subject]"
+                      name="Subject"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\CSV Subject\Data Conversion.Outputs[Data Conversion Output].Columns[Subject]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\CSV Subject.Paths[Data Conversion Output]"
+              endId="Package\CSV Subject\Conditional Split.Inputs[Conditional Split Input]"
+              name="Data Conversion Output"
+              startId="Package\CSV Subject\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\CSV Subject.Paths[Derived Column Output]"
+              endId="Package\CSV Subject\wybranie tylko kolumny Subject.Inputs[Sort Input]"
+              name="Derived Column Output"
+              startId="Package\CSV Subject\dodanie &quot;,&quot; na końcu.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\CSV Subject.Paths[Flat File Source Error Output]"
+              endId="Package\CSV Subject\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Flat File Source Error Output"
+              startId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Error Output]" />
+            <path
+              refId="Package\CSV Subject.Paths[Flat File Source Output]"
+              endId="Package\CSV Subject\Data Conversion.Inputs[Data Conversion Input]"
+              name="Flat File Source Output"
+              startId="Package\CSV Subject\CSV Inventory.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\CSV Subject.Paths[Not_Null]"
+              endId="Package\CSV Subject\dodanie &quot;,&quot; na końcu.Inputs[Derived Column Input]"
+              name="Not_Null"
+              startId="Package\CSV Subject\Conditional Split.Outputs[Not_Null]" />
+            <path
+              refId="Package\CSV Subject.Paths[Sort Output]"
+              endId="Package\CSV Subject\generowanie pliku csv.Inputs[Flat File Destination Input]"
+              name="Sort Output"
+              startId="Package\CSV Subject\wybranie tylko kolumny Subject.Outputs[Sort Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="135.2,41.6"
+          Id="Package\CSV Subject"
+          TopLeft="126.428573581637,48.9411771569698" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\CSV Subject">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="176.8,41.6"
+          Id="Package\CSV Subject\dodanie &quot;,&quot; na końcu"
+          TopLeft="62.8571439275936,214.88235595482" />
+        <NodeLayout
+          Size="145.6,41.6"
+          Id="Package\CSV Subject\CSV Inventory"
+          TopLeft="185.714288876982,13.7647060753977" />
+        <NodeLayout
+          Size="228,41.6"
+          Id="Package\CSV Subject\wybranie tylko kolumny Subject"
+          TopLeft="32.1428576902468,288.36470990412" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\CSV Subject\Flat File Destination"
+          TopLeft="270.000004598073,89.4705894900854" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\CSV Subject\Data Conversion"
+          TopLeft="52.8571437572947,64.2352950185228" />
+        <NodeLayout
+          Size="182.4,41.6"
+          Id="Package\CSV Subject\generowanie pliku csv"
+          TopLeft="52.8571437572946,357.800003828722" />
+        <NodeLayout
+          Size="154.4,41.6"
+          Id="Package\CSV Subject\Conditional Split"
+          TopLeft="62.1428582011437,139.000001276241" />
+        <EdgeLayout
+          Id="Package\CSV Subject.Paths[Sort Output]"
+          TopLeft="145.100000723771,329.96470990412">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,27.8352939246021"
+              Start="0,0"
+              End="0,20.3352939246021">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.3352939246021" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CSV Subject.Paths[Not_Null]"
+          TopLeft="139.342858201144,180.600001276241">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="11.9142857264499,34.282354678579"
+              Start="0,0"
+              End="11.9142857264499,26.782354678579">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.1411773392895" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.1411773392895"
+                    Point2="0,17.1411773392895"
+                    Point3="4,17.1411773392895" />
+                  <mssgle:LineSegment
+                    End="7.91428572644992,17.1411773392895" />
+                  <mssgle:CubicBezierSegment
+                    Point1="7.91428572644992,17.1411773392895"
+                    Point2="11.9142857264499,17.1411773392895"
+                    Point3="11.9142857264499,21.1411773392895" />
+                  <mssgle:LineSegment
+                    End="11.9142857264499,26.782354678579" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-13.194986043025,22.1411773392895,38.3042578125,11.0625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CSV Subject.Paths[Flat File Source Output]"
+          TopLeft="185.714288876982,34.5647060753977">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-55.2571451196866,29.6705889431251"
+              Start="0,0"
+              End="-55.2571451196866,22.1705889431251">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-51.2571451196866,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-51.2571451196866,0"
+                    Point2="-55.2571451196866,0"
+                    Point3="-55.2571451196866,4" />
+                  <mssgle:LineSegment
+                    End="-55.2571451196866,22.1705889431251" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CSV Subject.Paths[Flat File Source Error Output]"
+          TopLeft="281.447622210315,55.3647060753977">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="74.1523823877583,34.1058834146877"
+              Start="0,0"
+              End="74.1523823877583,26.6058834146877">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,9.86478304031869" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,9.86478304031869"
+                    Point2="0,13.8647830403187"
+                    Point3="4,13.8647830403187" />
+                  <mssgle:LineSegment
+                    End="70.1523823877583,13.8647830403187" />
+                  <mssgle:CubicBezierSegment
+                    Point1="70.1523823877583,13.8647830403187"
+                    Point2="74.1523823877583,13.8647830403187"
+                    Point3="74.1523823877583,17.8647830403187" />
+                  <mssgle:LineSegment
+                    End="74.1523823877583,26.6058834146877" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-26.5501955248709,18.8647830403187,127.2527734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CSV Subject.Paths[Derived Column Output]"
+          TopLeft="148.70000080892,256.48235595482">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,31.8823539492998"
+              Start="0,0"
+              End="0,24.3823539492998">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.3823539492998" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-8,4.1911769746499,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CSV Subject.Paths[Data Conversion Output]"
+          TopLeft="130.457143757295,105.835295018523">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="8.885714443849,33.1647062577182"
+              Start="0,0"
+              End="8.885714443849,25.6647062577182">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.5823531288591" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.5823531288591"
+                    Point2="0,16.5823531288591"
+                    Point3="4,16.5823531288591" />
+                  <mssgle:LineSegment
+                    End="4.885714443849,16.5823531288591" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4.885714443849,16.5823531288591"
+                    Point2="8.885714443849,16.5823531288591"
+                    Point3="8.885714443849,20.5823531288591" />
+                  <mssgle:LineSegment
+                    End="8.885714443849,25.6647062577182" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

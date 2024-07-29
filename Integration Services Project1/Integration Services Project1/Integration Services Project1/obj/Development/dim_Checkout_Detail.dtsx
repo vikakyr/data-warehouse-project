@@ -1,0 +1,2242 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/8/2024 11:33:19 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DELL-1"
+  DTS:CreatorName="DELL-1\B"
+  DTS:DTSID="{D88C008B-0F9A-4D60-906F-FC02CB741D18}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5467.0"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{401417B4-E56F-475B-ABEF-EDC7CD47F447}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CSV CheckOut]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{7DB828FA-4B22-4087-8497-23ECEB15708E}"
+      DTS:ObjectName="CSV CheckOut">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="C:\Users\B\Desktop\hD-project\Checkouts_by_Title_20240608.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UsageClass"
+              DTS:DTSID="{94931292-A0DD-4E14-BA56-CFC4976B3028}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CheckoutType"
+              DTS:DTSID="{67918B2E-EC0E-44E4-AA79-E6FF4DC24D76}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MaterialType"
+              DTS:DTSID="{734CB433-8CA0-428B-BB6A-C5D8AC6E8B37}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CheckoutYear"
+              DTS:DTSID="{8C2FD102-1FDF-4A6A-8A6E-787519B8A33C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CheckoutMonth"
+              DTS:DTSID="{CE3B26AC-651B-4749-9BDF-1A170C618AEE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Checkouts"
+              DTS:DTSID="{316F6D42-D496-4923-99E2-DC5F001AF0A1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Title"
+              DTS:DTSID="{CB9A8E42-1492-49F3-BB31-601990CD4528}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ISBN"
+              DTS:DTSID="{A8E506D6-5387-4C9E-A9AA-BD2A614E001E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Creator"
+              DTS:DTSID="{C11F0242-5A54-4C9A-B65B-BFD95B0DA328}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Subjects"
+              DTS:DTSID="{329E2802-DAB0-4B74-9601-C8B35FDBD313}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Publisher"
+              DTS:DTSID="{D67C2F4C-C826-4851-90AC-7AD3A49E96BF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PublicationYear"
+              DTS:DTSID="{87D5A446-82C1-4FFC-95F1-F737560D7C72}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{0C0BDF89-7129-46B9-9FF7-21F0096A88AD}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="C:\Users\B\Desktop\hD-project\Checkout_error_log.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Flat File Source Error Output Column"
+              DTS:DTSID="{1B84201E-84BB-4ECB-9EDD-D54EFBD6D34D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{92544EE4-D0FC-403F-935C-A0277813E43F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{EAD562DB-4B84-4177-9EE9-3D0404EA37DF}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.projectkm2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{88974242-5588-4A58-8454-1731E6EEE970}"
+      DTS:ObjectName="localhost.projectkm2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=projectkm2;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{88974242-5588-4A58-8454-1731E6EEE970}localhost.projectkm2;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\dim_Checkout_Detail"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{A1BE025F-4D81-4032-841E-D629465EC7A2}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="dim_Checkout_Detail"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\dim_Checkout_Detail\CSV Checkout"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="CSV Checkout"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\dim_Checkout_Detail\CSV Checkout.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[CSV CheckOut]"
+                  connectionManagerRefId="Package.ConnectionManagers[CSV CheckOut]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].Columns[UsageClass]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].ExternalColumns[UsageClass]"
+                      length="50"
+                      lineageId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].Columns[UsageClass]"
+                      name="UsageClass"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].Columns[CheckoutType]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].ExternalColumns[CheckoutType]"
+                      length="50"
+                      lineageId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].Columns[CheckoutType]"
+                      name="CheckoutType"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].Columns[MaterialType]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].ExternalColumns[MaterialType]"
+                      length="50"
+                      lineageId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].Columns[MaterialType]"
+                      name="MaterialType"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].Columns[CheckoutYear]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].ExternalColumns[CheckoutYear]"
+                      length="50"
+                      lineageId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].Columns[CheckoutYear]"
+                      name="CheckoutYear"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].Columns[CheckoutMonth]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].ExternalColumns[CheckoutMonth]"
+                      length="50"
+                      lineageId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].Columns[CheckoutMonth]"
+                      name="CheckoutMonth"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].Columns[Checkouts]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].ExternalColumns[Checkouts]"
+                      length="50"
+                      lineageId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].Columns[Checkouts]"
+                      name="Checkouts"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].Columns[Title]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].ExternalColumns[Title]"
+                      length="200"
+                      lineageId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].Columns[Title]"
+                      name="Title"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].Columns[ISBN]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].ExternalColumns[ISBN]"
+                      length="200"
+                      lineageId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].Columns[ISBN]"
+                      name="ISBN"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].ExternalColumns[UsageClass]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="UsageClass" />
+                    <externalMetadataColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].ExternalColumns[CheckoutType]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="CheckoutType" />
+                    <externalMetadataColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].ExternalColumns[MaterialType]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="MaterialType" />
+                    <externalMetadataColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].ExternalColumns[CheckoutYear]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="CheckoutYear" />
+                    <externalMetadataColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].ExternalColumns[CheckoutMonth]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="CheckoutMonth" />
+                    <externalMetadataColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].ExternalColumns[Checkouts]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Checkouts" />
+                    <externalMetadataColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].ExternalColumns[Title]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Title" />
+                    <externalMetadataColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].ExternalColumns[ISBN]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="ISBN" />
+                    <externalMetadataColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].ExternalColumns[Creator]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Creator" />
+                    <externalMetadataColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].ExternalColumns[Subjects]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Subjects" />
+                    <externalMetadataColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].ExternalColumns[Publisher]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Publisher" />
+                    <externalMetadataColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].ExternalColumns[PublicationYear]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="PublicationYear" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\dim_Checkout_Detail\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\dim_Checkout_Detail\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\dim_Checkout_Detail\Data Conversion.Inputs[Data Conversion Input].Columns[UsageClass]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="UsageClass"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\dim_Checkout_Detail\Sort.Outputs[Sort Output].Columns[UsageClass]" />
+                    <inputColumn
+                      refId="Package\dim_Checkout_Detail\Data Conversion.Inputs[Data Conversion Input].Columns[CheckoutType]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CheckoutType"
+                      cachedSortKeyPosition="2"
+                      lineageId="Package\dim_Checkout_Detail\Sort.Outputs[Sort Output].Columns[CheckoutType]" />
+                    <inputColumn
+                      refId="Package\dim_Checkout_Detail\Data Conversion.Inputs[Data Conversion Input].Columns[MaterialType]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MaterialType"
+                      cachedSortKeyPosition="3"
+                      lineageId="Package\dim_Checkout_Detail\Sort.Outputs[Sort Output].Columns[MaterialType]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\dim_Checkout_Detail\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\dim_Checkout_Detail\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\dim_Checkout_Detail\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of UsageClass]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="20"
+                      lineageId="Package\dim_Checkout_Detail\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of UsageClass]"
+                      name="Copy of UsageClass"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\dim_Checkout_Detail\Sort.Outputs[Sort Output].Columns[UsageClass]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\dim_Checkout_Detail\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of CheckoutType]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="20"
+                      lineageId="Package\dim_Checkout_Detail\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of CheckoutType]"
+                      name="Copy of CheckoutType"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\dim_Checkout_Detail\Sort.Outputs[Sort Output].Columns[CheckoutType]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\dim_Checkout_Detail\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MaterialType]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="40"
+                      lineageId="Package\dim_Checkout_Detail\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MaterialType]"
+                      name="Copy of MaterialType"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\dim_Checkout_Detail\Sort.Outputs[Sort Output].Columns[MaterialType]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\dim_Checkout_Detail\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\dim_Checkout_Detail\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\dim_Checkout_Detail\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\dim_Checkout_Detail\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\dim_Checkout_Detail\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\dim_Checkout_Detail\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\dim_Checkout_Detail\dim_Checkout_Detail"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="dim_Checkout_Detail"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[dim_Checkout_Detail]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\dim_Checkout_Detail\dim_Checkout_Detail.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.projectkm2]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.projectkm2]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\dim_Checkout_Detail\dim_Checkout_Detail.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\dim_Checkout_Detail\dim_Checkout_Detail.Inputs[OLE DB Destination Input].Columns[Checkout_Detail_Code]"
+                      cachedDataType="i4"
+                      cachedName="Checkout_Detail_Code"
+                      externalMetadataColumnId="Package\dim_Checkout_Detail\dim_Checkout_Detail.Inputs[OLE DB Destination Input].ExternalColumns[Checkout_Detail_Code]"
+                      lineageId="Package\dim_Checkout_Detail\dodanie Checkout_Detail_Code.Outputs[Output 0].Columns[Checkout_Detail_Code]" />
+                    <inputColumn
+                      refId="Package\dim_Checkout_Detail\dim_Checkout_Detail.Inputs[OLE DB Destination Input].Columns[Copy of UsageClass]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="Copy of UsageClass"
+                      externalMetadataColumnId="Package\dim_Checkout_Detail\dim_Checkout_Detail.Inputs[OLE DB Destination Input].ExternalColumns[usage_class]"
+                      lineageId="Package\dim_Checkout_Detail\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of UsageClass]" />
+                    <inputColumn
+                      refId="Package\dim_Checkout_Detail\dim_Checkout_Detail.Inputs[OLE DB Destination Input].Columns[Copy of CheckoutType]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="Copy of CheckoutType"
+                      externalMetadataColumnId="Package\dim_Checkout_Detail\dim_Checkout_Detail.Inputs[OLE DB Destination Input].ExternalColumns[checkout_type]"
+                      lineageId="Package\dim_Checkout_Detail\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of CheckoutType]" />
+                    <inputColumn
+                      refId="Package\dim_Checkout_Detail\dim_Checkout_Detail.Inputs[OLE DB Destination Input].Columns[Copy of MaterialType]"
+                      cachedDataType="wstr"
+                      cachedLength="40"
+                      cachedName="Copy of MaterialType"
+                      externalMetadataColumnId="Package\dim_Checkout_Detail\dim_Checkout_Detail.Inputs[OLE DB Destination Input].ExternalColumns[material_type]"
+                      lineageId="Package\dim_Checkout_Detail\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MaterialType]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\dim_Checkout_Detail\dim_Checkout_Detail.Inputs[OLE DB Destination Input].ExternalColumns[Checkout_Detail_Code]"
+                      dataType="i4"
+                      name="Checkout_Detail_Code" />
+                    <externalMetadataColumn
+                      refId="Package\dim_Checkout_Detail\dim_Checkout_Detail.Inputs[OLE DB Destination Input].ExternalColumns[usage_class]"
+                      dataType="wstr"
+                      length="20"
+                      name="usage_class" />
+                    <externalMetadataColumn
+                      refId="Package\dim_Checkout_Detail\dim_Checkout_Detail.Inputs[OLE DB Destination Input].ExternalColumns[checkout_type]"
+                      dataType="wstr"
+                      length="20"
+                      name="checkout_type" />
+                    <externalMetadataColumn
+                      refId="Package\dim_Checkout_Detail\dim_Checkout_Detail.Inputs[OLE DB Destination Input].ExternalColumns[material_type]"
+                      dataType="wstr"
+                      length="50"
+                      name="material_type" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\dim_Checkout_Detail\dim_Checkout_Detail.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\dim_Checkout_Detail\dim_Checkout_Detail.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\dim_Checkout_Detail\dim_Checkout_Detail.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\dim_Checkout_Detail\dim_Checkout_Detail.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\dim_Checkout_Detail\dim_Checkout_Detail.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\dim_Checkout_Detail\dim_Checkout_Detail.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\dim_Checkout_Detail\dodanie Checkout_Detail_Code"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;13"
+              description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
+              name="dodanie Checkout_Detail_Code"
+              version="13">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Stores the source code of the component"
+                  isArray="true"
+                  name="SourceCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="30">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
+    {
+
+        if (InputName.Equals(@"Input 0", StringComparison.Ordinal))
+        {
+            Input0_ProcessInput(new Input0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
+        }
+
+    }
+
+    public virtual void Input0_ProcessInput(Input0Buffer Buffer)
+    {
+        while (Buffer.NextRow())
+        {
+            Input0_ProcessInputRow(Buffer);
+        }
+    }
+
+    public virtual void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[main.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[#region Help:  Introduction to the Script Component
+/* The Script Component allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services data flow.
+ *
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script component. */
+#endregion
+
+#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+#endregion
+
+/// <summary>
+/// This is the class to which to add your code.  Do not change the name, attributes, or parent
+/// of this class.
+/// </summary>
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+    #region Help:  Using Integration Services variables and parameters
+    /* To use a variable in this script, first ensure that the variable has been added to
+     * either the list contained in the ReadOnlyVariables property or the list contained in
+     * the ReadWriteVariables property of this script component, according to whether or not your
+     * code needs to write into the variable.  To do so, save this script, close this instance of
+     * Visual Studio, and update the ReadOnlyVariables and ReadWriteVariables properties in the
+     * Script Transformation Editor window.
+     * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+     *
+     * Example of reading from a variable or parameter:
+     *  DateTime startTime = Variables.MyStartTime;
+     *
+     * Example of writing to a variable:
+     *  Variables.myStringVariable = "new value";
+     */
+    #endregion
+
+    #region Help:  Using Integration Services Connnection Managers
+    /* Some types of connection managers can be used in this script component.  See the help topic
+     * "Working with Connection Managers Programatically" for details.
+     *
+     * To use a connection manager in this script, first ensure that the connection manager has
+     * been added to either the list of connection managers on the Connection Managers page of the
+     * script component editor.  To add the connection manager, save this script, close this instance of
+     * Visual Studio, and add the Connection Manager to the list.
+     *
+     * If the component needs to hold a connection open while processing rows, override the
+     * AcquireConnections and ReleaseConnections methods.
+     * 
+     * Example of using an ADO.Net connection manager to acquire a SqlConnection:
+     *  object rawConnection = Connections.SalesDB.AcquireConnection(transaction);
+     *  SqlConnection salesDBConn = (SqlConnection)rawConnection;
+     *
+     * Example of using a File connection manager to acquire a file path:
+     *  object rawConnection = Connections.Prices_zip.AcquireConnection(transaction);
+     *  string filePath = (string)rawConnection;
+     *
+     * Example of releasing a connection manager:
+     *  Connections.SalesDB.ReleaseConnection(rawConnection);
+     */
+    #endregion
+
+    #region Help:  Firing Integration Services Events
+    /* This script component can fire events.
+     *
+     * Example of firing an error event:
+     *  ComponentMetaData.FireError(10, "Process Values", "Bad value", "", 0, out cancel);
+     *
+     * Example of firing an information event:
+     *  ComponentMetaData.FireInformation(10, "Process Values", "Processing has started", "", 0, fireAgain);
+     *
+     * Example of firing a warning event:
+     *  ComponentMetaData.FireWarning(10, "Process Values", "No rows were received", "", 0);
+     */
+    #endregion
+
+    private static int checkoutdetailCode = 0;
+
+    /// <summary>
+    /// This method is called once, before rows begin to be processed in the data flow.
+    ///
+    /// You can remove this method if you don't need to do anything here.
+    /// </summary>
+    public override void PreExecute()
+    {
+        base.PreExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called after all the rows have passed through this component.
+    ///
+    /// You can delete this method if you don't need to do anything here.
+    /// </summary>
+    public override void PostExecute()
+    {
+        base.PostExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called once for every row that passes through the component from Input0.
+    ///
+    /// Example of reading a value from a column in the the row:
+    ///  string zipCode = Row.ZipCode
+    ///
+    /// Example of writing a value to a column in the row:
+    ///  Row.ZipCode = zipCode
+    /// </summary>
+    /// <param name="Row">The row that is currently passing through the component</param>
+    public override void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+        Row.CheckoutDetailCode = System.Threading.Interlocked.Increment(ref checkoutdetailCode);
+
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services buffer wrappers
+*  This module defines classes for accessing data flow buffers
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+
+public class Input0Buffer: ScriptBuffer
+
+{
+    public Input0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public String UsageClass
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[0]);
+        }
+    }
+    public bool UsageClass_IsNull
+    {
+        get
+        {
+            return IsNull(0);
+        }
+    }
+
+    public String CheckoutType
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[1]);
+        }
+    }
+    public bool CheckoutType_IsNull
+    {
+        get
+        {
+            return IsNull(1);
+        }
+    }
+
+    public String MaterialType
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[2]);
+        }
+    }
+    public bool MaterialType_IsNull
+    {
+        get
+        {
+            return IsNull(2);
+        }
+    }
+
+    public Int32 CheckoutDetailCode
+    {
+        set
+        {
+            this[3] = value;
+        }
+    }
+    public bool CheckoutDetailCode_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(3);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public bool NextRow()
+    {
+        return base.NextRow();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_60fb65aa9f414c818b8bd974697a05e2.Properties.Settings.get_Default():SC_60fb65aa9f414c818b8bd974697a05e2.Properties.Sett" +
+    "ings")]
+
+namespace SC_60fb65aa9f414c818b8bd974697a05e2.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_60fb65aa9f414c818b8bd974697a05e2.csproj]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{15d41514-e741-4f5c-8f9c-fb41c6eb77b1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SC_60fb65aa9f414c818b8bd974697a05e2</RootNamespace>
+    <AssemblyName>SC_60fb65aa9f414c818b8bd974697a05e2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Compile Include="main.cs" />
+    <Compile Include="BufferWrapper.cs" />
+    <Compile Include="ComponentWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptComponent" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptComponent" GeneratedNamespace="SC_60fb65aa9f414c818b8bd974697a05e2" IconIndex="0"></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_SC160</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Project]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:Language>msBuild</msb:Language>
+    <msb:CodeName>SC_60fb65aa9f414c818b8bd974697a05e2</msb:CodeName>
+    <msb:DisplayName>SC_60fb65aa9f414c818b8bd974697a05e2</msb:DisplayName>
+    <msb:ProjectId>{E314F4DD-D6A0-4C1B-8B47-4F47C787A34B}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="SC_60fb65aa9f414c818b8bd974697a05e2.csproj" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="main.cs" />
+    <msb:File Include="BufferWrapper.cs" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+    <msb:File Include="ComponentWrapper.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_60fb65aa9f414c818b8bd974697a05e2")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SC_60fb65aa9f414c818b8bd974697a05e2")]
+[assembly: AssemblyCopyright("Copyright @  2024")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.0.0")]
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_60fb65aa9f414c818b8bd974697a05e2.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_60fb65aa9f414c818b8bd974697a05e2.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_60fb65aa9f414c818b8bd974697a05e2.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace SC_60fb65aa9f414c818b8bd974697a05e2.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_60fb65aa9f414c818b8bd974697a05e2.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Stores the binary representation of the component"
+                  isArray="true"
+                  name="BinaryCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="2">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_60fb65aa9f414c818b8bd974697a05e2.dll]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAAHTZGYAAAAAAAAAAOAAIiALATAAABQAAAAIAAAAAAAABjMA
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAALQyAABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAADBMAAAAgAAAAFAAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAWAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAHAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAADo
+MgAAAAAAAEgAAAACAAUA7CEAABAQAAABAAAAAAAAAPwxAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACipGA38BAAAEKBIAAApvDAAABioe
+AigQAAAGKioCAwQFKBMAAAoqUgJ7FAAACgJ7FQAAChaUbxYAAAoqIgIWKBcAAAoqUgJ7FAAACgJ7
+FQAACheUbxYAAAoqIgIXKBcAAAoqUgJ7FAAACgJ7FQAAChiUbxYAAAoqIgIYKBcAAAoqOgIZA4wb
+AAABKBgAAAoqWgMsCAIZKBkAAAoqcgEAAHBzGgAACnoeAigbAAAKKh4CKBwAAAoqfgIoHQAACgIC
+cxQAAAZ9AgAABAICcxUAAAZ9AwAABCqSBHKeAABwGm8eAAAKLBUCBQIDKB8AAAoOBHMFAAAGbxIA
+AAYqSisHAgNvEwAABgNvDgAABi3xKgYqOgIoIAAACgIDfQQAAAQqOgIoIAAACgIDfQUAAAQqHgIo
+IAAACiqufgYAAAQtHnKuAABw0AcAAAIoIQAACm8iAAAKcyMAAAqABgAABH4GAAAEKhp+BwAABCoe
+AoAHAAAEKhp+CAAABCoeAigkAAAKKi5zGwAABoAIAAAEKgBCU0pCAQABAAAAAAAMAAAAdjQuMC4z
+MDMxOQAAAAAFAGwAAADkBQAAI34AAFAGAADcBgAAI1N0cmluZ3MAAAAALA0AACABAAAjVVMATA4A
+ABAAAAAjR1VJRAAAAFwOAAC0AQAAI0Jsb2IAAAAAAAAAAgAAAVcVoAEJAQAAAPoBMwAWAAABAAAA
+IQAAAAgAAAAIAAAAHAAAAA8AAAAkAAAAEAAAAAMAAAALAAAADAAAAAEAAAAEAAAAAQAAAAAAVwMB
+AAAAAAAGAD0C+gQGANEC+gQGAIkB5wQPAG4FAAAGALYBPAQGACACPAQGAAECPAQGALgCPAQGAF0C
+PAQGAHYCPAQGAM0BPAQGAOgBHQMKAJECuQAKALkEuQAOAKoEuQAKAIUEuQAKAE0GuQAGAAYG9AMG
+AGwB5wQGAMoEGgUGAHkEJwQSADwBQQMSAJ0BQQMSACQBEgQGAFEB+gQGAEUADAMGAAEA9AMGAE4E
+9AMGADoD9AMGAGgE9AMGAPcA9AMGAIsA9AMGANIGPAQAAAAAKwAAAAAAAQABAAEAEAAHBAAAEAAB
+AAEAAQAQAJ0EAAA5AAIABQABABAALwYAAEUAAgAQAAEAEADrBQAASQAEABQAAQAQAKwFAABJAAUA
+FQAAABAAIQV9BUkABgAWAAABEADbBX0FYQAIABoAEQB4AHwABgDrBX8ABgCsBYMAAQA9BocAAQA9
+BocAEQD7A4sAEQAUAY8AEQBRAJMAUCAAAAAAxgDvAgYAAQBYIAAAAADGAPoCBgABAGAgAAAAAMYA
+rwaXAAEAciAAAAAAhhjaBAYAAgB6IAAAAACGGNoEIQACAIUgAAAAAIYI9wWdAAUAmiAAAAAAhgjN
+A0MABQCjIAAAAACGCOsAnQAFALggAAAAAIYItQNDAAUAwSAAAAAAhgjaAJ0ABQDWIAAAAACGCJ0D
+QwAFAN8gAAAAAIYIYQABAAUA7iAAAAAAhgh/A6EABgAFIQAAAACGAMYGQwAHAA0hAAAAAIYADQZD
+AAcAFSEAAAAAhhjaBAYABwA1IQAAAADGAKIGpgAHAFohAAAAAMYBmwaXAAsAbSEAAAAAxgGvBpcA
+DABvIQAAAACGGNoEsAANAH4hAAAAAIYY2gSwAA4AjSEAAAAAgxjaBAYADwCVIQAAAACTCMYEtgAP
+AMEhAAAAAJMI/AC7AA8AyCEAAAAAkwgIAcAADwDQIQAAAACWCBkGxgAQANchAAAAAIYY2gQGABAA
+3yEAAAAAkRjgBMsAEAAAAAEAygYAAAEAvwQAAAIAtgUAAAMAkwQAAAEABgMAAAEABgMAAAEANAAA
+AAIArwAAAAMAvwQAAAQAkwQAAAEAvwQAAAEAygYAAAEAUwYAAAEAUwYAAAEABgMJANoEAQARANoE
+BgAZANoECgApANoEEAAxANoEEAA5ANoEEABBANoEEABJANoEEABRANoEEABZANoEEABhANoEEABp
+ANoEBgCZANoEBgC5ANoEFQDJANoEBgCJAO8CBgCJAPoCBgDRACUGGwBxANoEIQBxAL8EKwBxALYF
+LwB5ADcDMwBxANwDOABxAOsDPQBxAOMDAQDhANoEEABxAMYGQwBxAA0GQwCJANoEBgDpAOQFRwCJ
+AMoFTgCRANoEBgD5AJ0AVAD5AM4GXAChANoEYgDBANoEBgAuAAsA6gAuABMA8wAuABsAEgEuACMA
+GwEuACsARAEuADMARAEuADsARAEuAEMAGwEuAEsASgEuAFMARAEuAFsAYQFDAGMArwHjAGsArwEB
+AXsArwEpAXMAEgFJAXMAEgEDAAEABwAJAAgACwAAAPsFzwAAANED0wAAAO8AzwAAALkD0wAAAN4A
+zwAAAKED0wAAAGUA1wAAAIMD0wAAAMoE2wAAABwB4AAAAB0G5QACAAYAAwACAAcABQACAAgABwAC
+AAkACQACAAoACwACAAsADQABAAwADwABAA0AEQACABcAEwACABgAFQABABkAFQACABoAFwAEgAAA
+AQAAAAAAAAAAAAAAAAAHAAAABAAAAAAAAAAAAAAAagA8AAAAAAAQAAAAAAAAAAAAAABzAF0GAAAA
+ABAAAAAAAAAAAAAAAHMAegYAAAAABAAAAAAAAAAAAAAAagD0AwAAAAAAAAAAAQAAACsFAAAAAABJ
+bnQzMgBTQ182MGZiNjVhYTlmNDE0YzgxOGI4YmQ5NzQ2OTdhMDVlMgA8TW9kdWxlPgBJbnB1dElE
+AG1zY29ybGliAEludGVybG9ja2VkAGRlZmF1bHRJbnN0YW5jZQBzZXRfQ2hlY2tvdXREZXRhaWxD
+b2RlAGNoZWNrb3V0ZGV0YWlsQ29kZQBSdW50aW1lVHlwZUhhbmRsZQBHZXRUeXBlRnJvbUhhbmRs
+ZQBJbnB1dE5hbWUATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuUGlwZWxpbmUAZ2V0X01hdGVyaWFs
+VHlwZQBnZXRfQ2hlY2tvdXRUeXBlAGdldF9DdWx0dXJlAHNldF9DdWx0dXJlAHJlc291cmNlQ3Vs
+dHVyZQBBcHBsaWNhdGlvblNldHRpbmdzQmFzZQBFZGl0b3JCcm93c2FibGVTdGF0ZQBDb21waWxl
+ckdlbmVyYXRlZEF0dHJpYnV0ZQBEZWJ1Z2dlck5vblVzZXJDb2RlQXR0cmlidXRlAERlYnVnZ2Fi
+bGVBdHRyaWJ1dGUARWRpdG9yQnJvd3NhYmxlQXR0cmlidXRlAEFzc2VtYmx5VGl0bGVBdHRyaWJ1
+dGUAQXNzZW1ibHlUcmFkZW1hcmtBdHRyaWJ1dGUAVGFyZ2V0RnJhbWV3b3JrQXR0cmlidXRlAEFz
+c2VtYmx5Q29uZmlndXJhdGlvbkF0dHJpYnV0ZQBBc3NlbWJseURlc2NyaXB0aW9uQXR0cmlidXRl
+AENvbXBpbGF0aW9uUmVsYXhhdGlvbnNBdHRyaWJ1dGUAQXNzZW1ibHlQcm9kdWN0QXR0cmlidXRl
+AEFzc2VtYmx5Q29weXJpZ2h0QXR0cmlidXRlAFNTSVNTY3JpcHRDb21wb25lbnRFbnRyeVBvaW50
+QXR0cmlidXRlAEFzc2VtYmx5Q29tcGFueUF0dHJpYnV0ZQBSdW50aW1lQ29tcGF0aWJpbGl0eUF0
+dHJpYnV0ZQBQcmVFeGVjdXRlAFBvc3RFeGVjdXRlAHZhbHVlAFN5c3RlbS5UaHJlYWRpbmcAU3lz
+dGVtLlJ1bnRpbWUuVmVyc2lvbmluZwBHZXRTdHJpbmcAU3lzdGVtLkNvbXBvbmVudE1vZGVsAFND
+XzYwZmI2NWFhOWY0MTRjODE4YjhiZDk3NDY5N2EwNWUyLmRsbABzZXRfQ2hlY2tvdXREZXRhaWxD
+b2RlX0lzTnVsbABnZXRfTWF0ZXJpYWxUeXBlX0lzTnVsbABnZXRfQ2hlY2tvdXRUeXBlX0lzTnVs
+bABnZXRfVXNhZ2VDbGFzc19Jc051bGwAU2V0TnVsbABzZXRfSXRlbQBTeXN0ZW0AcmVzb3VyY2VN
+YW4AU2NyaXB0TWFpbgBTeXN0ZW0uQ29uZmlndXJhdGlvbgBTeXN0ZW0uR2xvYmFsaXphdGlvbgBT
+eXN0ZW0uUmVmbGVjdGlvbgBJbnZhbGlkT3BlcmF0aW9uRXhjZXB0aW9uAFN0cmluZ0NvbXBhcmlz
+b24AQ3VsdHVyZUluZm8AT3V0cHV0TmFtZU1hcABPdXRwdXRNYXAASW5wdXQwQnVmZmVyAFBpcGVs
+aW5lQnVmZmVyAFNjcmlwdEJ1ZmZlcgBnZXRfUmVzb3VyY2VNYW5hZ2VyAC5jdG9yAC5jY3RvcgBT
+eXN0ZW0uRGlhZ25vc3RpY3MAU3lzdGVtLlJ1bnRpbWUuQ29tcGlsZXJTZXJ2aWNlcwBTeXN0ZW0u
+UmVzb3VyY2VzAFNDXzYwZmI2NWFhOWY0MTRjODE4YjhiZDk3NDY5N2EwNWUyLlByb3BlcnRpZXMu
+UmVzb3VyY2VzLnJlc291cmNlcwBEZWJ1Z2dpbmdNb2RlcwBTQ182MGZiNjVhYTlmNDE0YzgxOGI4
+YmQ5NzQ2OTdhMDVlMi5Qcm9wZXJ0aWVzAFZhcmlhYmxlcwBCdWZmZXJDb2x1bW5JbmRleGVzAEdl
+dENvbHVtbkluZGV4ZXMAU2V0dGluZ3MARXF1YWxzAENvbm5lY3Rpb25zAGdldF9Vc2FnZUNsYXNz
+AE9iamVjdABFbmRPZlJvd3NldABnZXRfRGVmYXVsdABJbmNyZW1lbnQAVXNlckNvbXBvbmVudABQ
+YXJlbnRDb21wb25lbnQAU2NyaXB0Q29tcG9uZW50AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuVHhTY3Jp
+cHQATWljcm9zb2Z0LlNxbFNlcnZlci5QaXBlbGluZUhvc3QASW5wdXQwX1Byb2Nlc3NJbnB1dABJ
+bnB1dDBfUHJvY2Vzc0lucHV0Um93AE5leHRSb3cAZ2V0X0Fzc2VtYmx5AAAAgJtJAHMATgB1AGwA
+bAAgAHAAcgBvAHAAZQByAHQAeQAgAGMAYQBuAG4AbwB0ACAAYgBlACAAcwBlAHQAIAB0AG8AIABG
+AGEAbABzAGUALgAgAEEAcwBzAGkAZwBuACAAYQAgAHYAYQBsAHUAZQAgAHQAbwAgAHQAaABlACAA
+YwBvAGwAdQBtAG4AIABpAG4AcwB0AGUAYQBkAC4AAA9JAG4AcAB1AHQAIAAwAABxUwBDAF8ANgAw
+AGYAYgA2ADUAYQBhADkAZgA0ADEANABjADgAMQA4AGIAOABiAGQAOQA3ADQANgA5ADcAYQAwADUA
+ZQAyAC4AUAByAG8AcABlAHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAAClb85ozHL3Qo1m
+VWLSiBp7AAQgAQEIAyAAAQUgAQEREQQgAQEOBSABARFZBQABCBAICSADARI9HQgSQQMGEj0DBh0I
+BCABDggEIAECCAUgAgEIHAMgAAIGIAICDhF5BSABHQgIBwABEn0RgIEFIAASgIUHIAIBDhKAhQi3
+elxWGTTgiQiJhF3NgIDMkQIGCAMGEhQDBhIYAwYSRQMGElEDBhJVAwYSIAUgAQESDAMgAA4EIAEB
+AgkgBAEIDhI9EkEFIAEBEkUEAAASUQQAABJVBQABARJVBAAAEiADAAABAygADgMoAAIDKAAIBAgA
+ElEECAASVQQIABIgCAEACAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhyb3dzAQgBAAIA
+AAAAACgBACNTQ182MGZiNjVhYTlmNDE0YzgxOGI4YmQ5NzQ2OTdhMDVlMgAABQEAAAAAFgEAEUNv
+cHlyaWdodCBAICAyMDI0AABNAQAcLk5FVEZyYW1ld29yayxWZXJzaW9uPXY0LjcuMgEAVA4URnJh
+bWV3b3JrRGlzcGxheU5hbWUULk5FVCBGcmFtZXdvcmsgNC43LjIEAQAAALQAAADOyu++AQAAAJEA
+AABsU3lzdGVtLlJlc291cmNlcy5SZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIsIFZlcnNpb249NC4w
+LjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5I1N5
+c3RlbS5SZXNvdXJjZXMuUnVudGltZVJlc291cmNlU2V0AgAAAAAAAAAAAAAAUEFEUEFEULQAAADc
+MgAAAAAAAAAAAAD2MgAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6DIAAAAAAAAAAAAAAABfQ29y
+RGxsTWFpbgBtc2NvcmVlLmRsbAAAAAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAA
+SAAAAFhAAADsAwAAAAAAAAAAAADsAzQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAA
+AAAAvQTv/gAAAQAAAAEAAAAAAAAAAQAAAAAAPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
+AAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBu
+AAAAAAAAALAETAMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAAKAMAAAEAMAAwADAA
+MAAwADQAYgAwAAAAGgABAAEAQwBvAG0AbQBlAG4AdABzAAAAAAAAACIAAQABAEMAbwBtAHAAYQBu
+AHkATgBhAG0AZQAAAAAAAAAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAA
+AABTAEMAXwA2ADAAZgBiADYANQBhAGEAOQBmADQAMQA0AGMAOAAxADgAYgA4AGIAZAA5ADcANAA2
+ADkANwBhADAANQBlADIAAAAwAAgAAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4A
+MAAuADAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAQwBfADYAMABmAGIANgA1
+AGEAYQA5AGYANAAxADQAYwA4ADEAOABiADgAYgBkADkANwA0ADYAOQA3AGEAMAA1AGUAMgAuAGQA
+bABsAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAQwBvAHAAeQByAGkAZwBo
+AHQAIABAACAAIAAyADAAMgA0AAAAKgABAAEATABlAGcAYQBsAFQAcgBhAGQAZQBtAGEAcgBrAHMA
+AAAAAAAAAAB4ACgAAQBPAHIAaQBnAGkAbgBhAGwARgBpAGwAZQBuAGEAbQBlAAAAUwBDAF8ANgAw
+AGYAYgA2ADUAYQBhADkAZgA0ADEANABjADgAMQA4AGIAOABiAGQAOQA3ADQANgA5ADcAYQAwADUA
+ZQAyAC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBtAGUAAAAAAFMAQwBfADYAMABm
+AGIANgA1AGEAYQA5AGYANAAxADQAYwA4ADEAOABiADgAYgBkADkANwA0ADYAOQA3AGEAMAA1AGUA
+MgAAADQACAABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAA4
+AAgAAQBBAHMAcwBlAG0AYgBsAHkAIABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgAwAC4AMAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAACDMAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
+                  name="VSTAProjectName"
+                  typeConverter="NOTBROWSABLE">SC_60fb65aa9f414c818b8bd974697a05e2</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the programming language used by the script."
+                  name="ScriptLanguage"
+                  typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read-only variables."
+                  name="ReadOnlyVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read/write variables."
+                  name="ReadWriteVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="List of breakpoints present on the script."
+                  isArray="true"
+                  name="BreakpointCollection"
+                  typeConverter="NOTBROWSABLE">
+                  <arrayElements
+                    arrayElementCount="0" />
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Checksum to match component metedata against compiled codes."
+                  name="MetadataChecksum140"
+                  typeConverter="NOTBROWSABLE">BF</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\dim_Checkout_Detail\dodanie Checkout_Detail_Code.Inputs[Input 0]"
+                  hasSideEffects="true"
+                  name="Input 0">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\dim_Checkout_Detail\dodanie Checkout_Detail_Code.Inputs[Input 0].Columns[UsageClass]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="UsageClass"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\dim_Checkout_Detail\Sort.Outputs[Sort Output].Columns[UsageClass]" />
+                    <inputColumn
+                      refId="Package\dim_Checkout_Detail\dodanie Checkout_Detail_Code.Inputs[Input 0].Columns[CheckoutType]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CheckoutType"
+                      cachedSortKeyPosition="2"
+                      lineageId="Package\dim_Checkout_Detail\Sort.Outputs[Sort Output].Columns[CheckoutType]" />
+                    <inputColumn
+                      refId="Package\dim_Checkout_Detail\dodanie Checkout_Detail_Code.Inputs[Input 0].Columns[MaterialType]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MaterialType"
+                      cachedSortKeyPosition="3"
+                      lineageId="Package\dim_Checkout_Detail\Sort.Outputs[Sort Output].Columns[MaterialType]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\dim_Checkout_Detail\dodanie Checkout_Detail_Code.Outputs[Output 0]"
+                  name="Output 0"
+                  synchronousInputId="Package\dim_Checkout_Detail\dodanie Checkout_Detail_Code.Inputs[Input 0]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\dim_Checkout_Detail\dodanie Checkout_Detail_Code.Outputs[Output 0].Columns[Checkout_Detail_Code]"
+                      dataType="i4"
+                      lineageId="Package\dim_Checkout_Detail\dodanie Checkout_Detail_Code.Outputs[Output 0].Columns[Checkout_Detail_Code]"
+                      name="Checkout_Detail_Code" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\dim_Checkout_Detail\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1045"
+              name="Flat File Destination"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\dim_Checkout_Detail\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\dim_Checkout_Detail\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\dim_Checkout_Detail\Flat File Destination.Inputs[Flat File Destination Input].Columns[Flat File Source Error Output Column]"
+                      cachedCodepage="1250"
+                      cachedDataType="text"
+                      cachedName="Flat File Source Error Output Column"
+                      externalMetadataColumnId="Package\dim_Checkout_Detail\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Flat File Source Error Output Column]"
+                      lineageId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]" />
+                    <inputColumn
+                      refId="Package\dim_Checkout_Detail\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      externalMetadataColumnId="Package\dim_Checkout_Detail\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      lineageId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Error Output].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\dim_Checkout_Detail\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      externalMetadataColumnId="Package\dim_Checkout_Detail\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Error Output].Columns[ErrorColumn]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\dim_Checkout_Detail\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      name="Flat File Source Error Output Column" />
+                    <externalMetadataColumn
+                      refId="Package\dim_Checkout_Detail\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      dataType="i4"
+                      name="ErrorCode" />
+                    <externalMetadataColumn
+                      refId="Package\dim_Checkout_Detail\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      dataType="i4"
+                      name="ErrorColumn" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\dim_Checkout_Detail\Sort"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\dim_Checkout_Detail\Sort.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\dim_Checkout_Detail\Sort.Inputs[Sort Input].Columns[UsageClass]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="UsageClass"
+                      lineageId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].Columns[UsageClass]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\dim_Checkout_Detail\Sort.Inputs[Sort Input].Columns[CheckoutType]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CheckoutType"
+                      lineageId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].Columns[CheckoutType]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\dim_Checkout_Detail\Sort.Inputs[Sort Input].Columns[MaterialType]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MaterialType"
+                      lineageId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].Columns[MaterialType]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">3</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\dim_Checkout_Detail\Sort.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\dim_Checkout_Detail\Sort.Outputs[Sort Output].Columns[UsageClass]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\dim_Checkout_Detail\Sort.Outputs[Sort Output].Columns[UsageClass]"
+                      name="UsageClass"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].Columns[UsageClass]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\dim_Checkout_Detail\Sort.Outputs[Sort Output].Columns[CheckoutType]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\dim_Checkout_Detail\Sort.Outputs[Sort Output].Columns[CheckoutType]"
+                      name="CheckoutType"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].Columns[CheckoutType]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\dim_Checkout_Detail\Sort.Outputs[Sort Output].Columns[MaterialType]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\dim_Checkout_Detail\Sort.Outputs[Sort Output].Columns[MaterialType]"
+                      name="MaterialType"
+                      sortKeyPosition="3">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output].Columns[MaterialType]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\dim_Checkout_Detail.Paths[Data Conversion Output]"
+              endId="Package\dim_Checkout_Detail\dim_Checkout_Detail.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\dim_Checkout_Detail\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\dim_Checkout_Detail.Paths[Flat File Source Error Output]"
+              endId="Package\dim_Checkout_Detail\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Flat File Source Error Output"
+              startId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Error Output]" />
+            <path
+              refId="Package\dim_Checkout_Detail.Paths[Flat File Source Output]"
+              endId="Package\dim_Checkout_Detail\Sort.Inputs[Sort Input]"
+              name="Flat File Source Output"
+              startId="Package\dim_Checkout_Detail\CSV Checkout.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\dim_Checkout_Detail.Paths[Output 0]"
+              endId="Package\dim_Checkout_Detail\Data Conversion.Inputs[Data Conversion Input]"
+              name="Output 0"
+              startId="Package\dim_Checkout_Detail\dodanie Checkout_Detail_Code.Outputs[Output 0]" />
+            <path
+              refId="Package\dim_Checkout_Detail.Paths[Sort Output]"
+              endId="Package\dim_Checkout_Detail\dodanie Checkout_Detail_Code.Inputs[Input 0]"
+              name="Sort Output"
+              startId="Package\dim_Checkout_Detail\Sort.Outputs[Sort Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="177.6,41.6"
+          Id="Package\dim_Checkout_Detail"
+          TopLeft="156.428574092534,30.5882357231061" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\dim_Checkout_Detail">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\dim_Checkout_Detail\Sort"
+          TopLeft="244.285718445876,167.470590584006" />
+        <NodeLayout
+          Size="177.6,41.6"
+          Id="Package\dim_Checkout_Detail\dim_Checkout_Detail"
+          TopLeft="250.000004257474,418.835297388684" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\dim_Checkout_Detail\Data Conversion"
+          TopLeft="250.000004257475,326.305883232368" />
+        <NodeLayout
+          Size="224.8,41.6"
+          Id="Package\dim_Checkout_Detail\dodanie Checkout_Detail_Code"
+          TopLeft="208.571432123379,243.200002917122" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\dim_Checkout_Detail\Flat File Destination"
+          TopLeft="504.285722873649,90.4235303769888" />
+        <NodeLayout
+          Size="144,41.6"
+          Id="Package\dim_Checkout_Detail\CSV Checkout"
+          TopLeft="272.857147503873,76.4705893077652" />
+        <EdgeLayout
+          Id="Package\dim_Checkout_Detail.Paths[Sort Output]"
+          TopLeft="293.085718445876,209.070590584006">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="27.8857136775031,34.1294123331153"
+              Start="0,0"
+              End="27.8857136775031,26.6294123331153">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.0647061665577" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.0647061665577"
+                    Point2="0,17.0647061665577"
+                    Point3="4,17.0647061665577" />
+                  <mssgle:LineSegment
+                    End="23.8857136775031,17.0647061665577" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.8857136775031,17.0647061665577"
+                    Point2="27.8857136775031,17.0647061665577"
+                    Point3="27.8857136775031,21.0647061665577" />
+                  <mssgle:LineSegment
+                    End="27.8857136775031,26.6294123331153" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\dim_Checkout_Detail.Paths[Output 0]"
+          TopLeft="324.285718190427,284.800002917122">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41.505880315246"
+              Start="0,0"
+              End="0,34.005880315246">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.005880315246" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\dim_Checkout_Detail.Paths[Flat File Source Output]"
+          TopLeft="344.857147503873,118.070589307765">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-51.771429057997,49.4000012762408"
+              Start="0,0"
+              End="-51.771429057997,41.9000012762408">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.7000006381204" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.7000006381204"
+                    Point2="0,24.7000006381204"
+                    Point3="-4,24.7000006381204" />
+                  <mssgle:LineSegment
+                    End="-47.771429057997,24.7000006381204" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-47.771429057997,24.7000006381204"
+                    Point2="-51.771429057997,24.7000006381204"
+                    Point3="-51.771429057997,28.7000006381204" />
+                  <mssgle:LineSegment
+                    End="-51.771429057997,41.9000012762408" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-33.8857145289985,29.7000006381204,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\dim_Checkout_Detail.Paths[Flat File Source Error Output]"
+          TopLeft="416.857147503873,97.2705893077652">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="87.4285753697757,13.9529410692236"
+              Start="0,0"
+              End="79.9285753697757,13.9529410692236">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="39.7142876848878,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="39.7142876848878,0"
+                    Point2="43.7142876848878,0"
+                    Point3="43.7142876848878,4" />
+                  <mssgle:LineSegment
+                    End="43.7142876848878,9.95294106922357" />
+                  <mssgle:CubicBezierSegment
+                    Point1="43.7142876848878,9.95294106922357"
+                    Point2="43.7142876848878,13.9529410692236"
+                    Point3="47.7142876848878,13.9529410692236" />
+                  <mssgle:LineSegment
+                    End="79.9285753697757,13.9529410692236" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-19.9120990338622,-17.609375,127.2527734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\dim_Checkout_Detail.Paths[Data Conversion Output]"
+          TopLeft="327.600004257475,367.905883232368">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="11.1999999999994,50.9294141563158"
+              Start="0,0"
+              End="11.1999999999994,43.4294141563158">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.4647070781579" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.4647070781579"
+                    Point2="0,25.4647070781579"
+                    Point3="4,25.4647070781579" />
+                  <mssgle:LineSegment
+                    End="7.19999999999942,25.4647070781579" />
+                  <mssgle:CubicBezierSegment
+                    Point1="7.19999999999942,25.4647070781579"
+                    Point2="11.1999999999994,25.4647070781579"
+                    Point3="11.1999999999994,29.4647070781579" />
+                  <mssgle:LineSegment
+                    End="11.1999999999994,43.4294141563158" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-2.40000000000029,30.4647070781579,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\dim_Checkout_Detail\dim_Checkout_Detail">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
